@@ -17,7 +17,7 @@ for item in ajl_jobs:
 
 
 #pandas code
-file = ('h:\Active Jobs Lists\Excel Current Active Job List.xlsx')
+file = ('file location')
 excel_data = pds.read_excel(file)
 excel_jobs = []
 for item in excel_data['Job']:
