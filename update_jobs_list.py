@@ -6,9 +6,9 @@ import shareplum as sp
 import pandas as pds
 
 #shareplum code
-authcookie = Office365('https://detaconsulting.sharepoint.com', username='luka.foy@deta.co.nz', password='Migration999#').GetCookies()
-site = Site('https://detaconsulting.sharepoint.com/sites/DETAProjectPortfolio-Alpha', version=Version.v365, authcookie=authcookie)
-active_jobs_list = site.List('DETA Active Job List')
+authcookie = Office365('sharepoint site name', username='xxxxxx', password='xxxxxx').GetCookies()
+site = Site('specific sharepoint site name', version=Version.v365, authcookie=authcookie)
+active_jobs_list = site.List('sharepoint list name')
 ajl_items = active_jobs_list.GetListItems()
 ajl_jobs = active_jobs_list.GetListItems(fields=['Job Number'])
 ajl_data = []
